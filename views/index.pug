@@ -1,0 +1,31 @@
+extends layout.pug
+//- include mixin.pug
+
+
+block content
+    each user in users
+            div
+                label #{user.username}
+    form(action="/userlist" method="post")
+        
+        div
+            label userid
+            input(type="text" name="userid" id="userid" required)
+        div
+            label name
+            input(type="text" name="username" id="username" required)
+        div
+            label email
+            input(type="email" name="email" id="email" required)
+        div
+            label age
+            input(type="text" name="age" id="age" required)
+        input(type="submit")
+
+            //- li #{user.username} + #{user.email} 
+    //- include ./foot.pug
+block tester
+    div this is a test
+
+//- block foot    
+    div different footer 2
