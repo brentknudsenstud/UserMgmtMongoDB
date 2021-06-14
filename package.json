@@ -1,7 +1,6 @@
 {
   "name": "simpleusermanager",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -14,5 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brentknudsenstud/SimpleUserManager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/brentknudsenstud/SimpleUserManager/issues"
+  },
+  "homepage": "https://github.com/brentknudsenstud/SimpleUserManager#readme",
+  "description": ""
 }
