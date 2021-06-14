@@ -1,0 +1,27 @@
+extends layout.pug
+
+block content
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.js')
+    script(src='/frontendjs/userlist.js')
+    table
+        tr
+            th User Id
+            th User Name
+            th User Email
+            th User Age
+            
+             
+        each user in users
+            tr
+                td #{user.userid}
+                td #{user.username}
+                td #{user.email}
+                td #{user.age}
+                td
+                    div
+                        button(id="edit", onclick="editUserInfo(event)") Edit
+                        button(id="delete", onclick="deleteUserInfo(event)") Delete
+                        button(id="save", onclick="saveUserInfo(event)") Save User
+
+
+
