@@ -6,7 +6,8 @@ block content
     table
         tr
             th User Id
-            th User Name
+            th User First Name
+            th User Last Name
             th User Email
             th User Age
             
@@ -14,7 +15,8 @@ block content
         each user in users
             tr
                 td #{user.userid}
-                td #{user.username}
+                td #{user.first_name}
+                td #{user.last_name}
                 td #{user.email}
                 td #{user.age}
                 td
@@ -23,5 +25,15 @@ block content
                         button(id="delete", onclick="deleteUserInfo(event)") Delete
                         button(id="save", onclick="saveUserInfo(event)") Save User
 
+    
+    a(href="/userlist") Show Ascending By Last Name
+    br
+    br
+    a(href="/userlist?descending=true") Show Descending By Last Name
+    br
+    br
+    input(id="search")
+    button(onclick="searchByLastName(event)") Search For User
+    
 
 

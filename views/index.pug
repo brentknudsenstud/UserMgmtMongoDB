@@ -9,16 +9,19 @@ block content
     form(action="/createuser" method="post")
         
         div
-            label userid
+            label User Id
             input(type="text" name="userid" id="userid" required)
         div
-            label name
-            input(type="text" name="username" id="username" required)
+            label First Name
+            input(type="text" name="first_name" id="first_name" required)
         div
-            label email
+            label Last Name
+            input(type="text" name="last_name" id="last_name" required)
+        div
+            label Email
             input(type="email" name="email" id="email" required)
         div
-            label age
+            label Age
             input(type="text" name="age" id="age" required)
         input(type="submit")
 
